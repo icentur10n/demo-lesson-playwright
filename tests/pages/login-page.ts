@@ -9,14 +9,14 @@ export class LoginPage {
   readonly signInButton: Locator
   readonly usernameField: Locator
   readonly passwordField: Locator
-  // add more locators here
+  readonly errorMessage: Locator
 
   constructor(page: Page) {
     this.page = page
     this.signInButton = page.getByTestId('signIn-button')
     this.usernameField = page.getByTestId('username-input')
     this.passwordField = page.getByTestId('password-input')
-    // continue with the rest of the implementation below
+    this.errorMessage = page.getByTestId('authorizationError-popup')
   }
 
   async open() {
@@ -29,6 +29,4 @@ export class LoginPage {
     await this.signInButton.click()
     return new OrderPage(this.page)
   }
-
-  // continue with the rest of the implementation below
 }
