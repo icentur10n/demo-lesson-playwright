@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test'
+import type { Locator, Page } from '@playwright/test'
 import { AuthorizedPage } from './authorized-page'
 
 export class OrderPage extends AuthorizedPage {
