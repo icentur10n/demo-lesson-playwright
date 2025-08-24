@@ -1,7 +1,7 @@
-import type { Page } from '@playwright/test'
+import type { Page, Locator } from '@playwright/test'
 import { OrderPage } from './order-page'
 import { SERVICE_URL } from '../../config/env-data'
-import type { Locator } from '@playwright/test'
+
 
 export class LoginPage {
   readonly page: Page

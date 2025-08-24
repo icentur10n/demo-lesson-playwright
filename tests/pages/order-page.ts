@@ -1,5 +1,4 @@
-import type { Page } from '@playwright/test'
-import type { Locator } from '@playwright/test'
+import type { Page, Locator } from '@playwright/test'
 
 export class OrderPage {
   readonly page: Page
